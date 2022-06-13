@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    height:100vh;
+    width:100vw;
+}
+#navbar{
+    height:10vh;
+    width:100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+#Logo{
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    display: inline-block;
+    height:100%;
+    width:50%;
+}
+#content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    height:90vh;
+    width:100vw;
+    gap:2em;
+    /* display:none; */
+}
+.text{
+    font-size: 2rem;
+}
+.block{
+    width:70vw;
+    height:60vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.first{
+    height:60%;
+    width:40%;
+    border-radius: 3rem;
+    margin:0 4%;
+    display: flex;
+}
+.Active{
+    border:5px solid green;
+}
+.Inactive{
+        border:5px solid red;
+}
+.enter{
+    display:inline-block;
+    width:8rem;
+    height:3rem;
+    text-align:center;
+    background-color: blue;
+    border-radius: 0.2rem;
+    text-decoration:none;
+    color:white;
+    font-size: 1.5rem; 
+    padding:0.5rem 0;
+    cursor:pointer;
+}
+.data{
+    height:fit-content;
+    height:100%;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#active-data{
+    font-size:3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px grey;
+}
+#inactive-data{
+    font-size:3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px grey;
+}
+.inactive{
+    background: url('/Resources/red.png') no-repeat center center;
+    background-size: 12rem;
+}
+.active{
+    background: url('/Resources/green.png') no-repeat center center;
+    background-size: 12rem;
+}
+.opt{
+    font-size: 2rem;
+    width:40%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    font-size:1.5rem;
+    margin:1rem;
+    display: inline-block;
+    width:5.5rem;
+    padding:0.5rem;
+    text-align: center;
+    background-color: red;
+    border:2px solid black;
+    border-radius: 0.3rem;
+    color:black;
+    cursor:pointer;
+}
