@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aa04ad0668.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"><a href="index.html" id="Logo"><img src="Resources/logo.png" alt="logo" id="logo"></a></div>
+        <div id="content">
+            <p class="text">
+                Bienvenue dans
+                l'application des
+                indicateurs de Steering
+            </p>
+            <div class="block">
+                <div class="first Inactive">
+                    <div class="inactive data">
+                        <span id="inactive-data">06</span>
+                    </div>
+                    <div class="opt">Inactive Indicators
+                        <span class="btn inactive-show">View</span>
+                    </div>
+                </div>
+                <div class="first Active">
+                    <div class="active data ">
+                        <span id="active-data">34</span>
+                    </div>
+                    <div class="opt">Active Indicators
+                        <span class="btn active-show">View</span>
+                    </div>
+                </div>
+            </div>
+            <span class="enter">Enter</span>
+        </div>
+        <div id="content2">
+            <div id="sidebar">
+                <ul class="region">
+                    <li class="category"><i class="fa-solid fa-diamond bullets"></i>&nbsp; Region</li>
+                    <ul class="reg">
+                        <li id="france"><i class="fa-solid fa-flag bullets"></i>France</li>
+                        <ul class="fr">
+                            <li><i class="fa-solid fa-chevron-right bullets"></i>EUANA</li>
+                            <li><i class="fa-solid fa-chevron-right bullets"></i>EUBSCONG</li>
+                            <li><i class="fa-solid fa-chevron-right bullets"></i>EUFR15</li>
+                            <li><i class="fa-solid fa-chevron-right bullets"></i>EUFR16</li>
+                            <li><i class="fa-solid fa-chevron-right bullets"></i>EUFR93</li>
+                            <li><i class="fa-solid fa-chevron-right bullets"></i>EUFRVY</li>
+                            <li><i class="fa-solid fa-chevron-right bullets"></i>EUFRNO</li>
+                            <li><i class="fa-solid fa-chevron-right bullets"></i>EUFRDO</li>
+                        </ul>
+                        <li id="spain"><i class="fa-solid fa-flag bullets"></i>Spain</li>
+                        <li id="netherlands"><i class="fa-solid fa-flag bullets"></i> Netherlands</li>
+                        <li id="portugal"><i class="fa-solid fa-flag bullets"></i> Portugal</li>
+                        <li id="italy"><i class="fa-solid fa-flag bullets"></i> Italy</li>
+                        <li if="belgium"><i class="fa-solid fa-flag bullets"></i> Belgium</li>
+                    </ul>
+                </ul>
+                <i class="fa-solid fa-angles-left button back"></i>
+            </div>
+            <div id="Data">
+                <div class="display">
+                    <div id="List">
+                        <table id="data-list">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Type</th>
+                                    <th>Code</th>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Act. Count</th>
+                                    <th>Prev. Count</th>
+                                    <th>Detail Report</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Row-1 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Reception</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG0012</td>
+                                    <td>Encha. COlis</td>
+                                    <td>Running</td>
+                                    <td>55.00</td>
+                                    <td>50.00</td>
+                                    <td><a href="#">https://report/NG0012</a></td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Enregisterment</td>
+                                    <td>Performance</td>
+                                    <td>EUBSCO.NG0033</td>
+                                    <td>Prep.Faire</td>
+                                    <td>Running</td>
+                                    <td>10.00</td>
+                                    <td>0.00</td>
+                                    <td><a href="#">https://report/NG0033</a></td>
+                                </tr>
+                                <!-- Row-3 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Validation</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG0054</td>
+                                    <td>Anomalies de</td>
+                                    <td>Stopped</td>
+                                    <td>?</td>
+                                    <td>23.00</td>
+                                    <td><a href="#">https://report/NG0054</a></td>
+                                </tr>
+                                <!-- Row-4 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Reception</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG001</td>
+                                    <td>Encha. COlis</td>
+                                    <td>Running</td>
+                                    <td>55.00</td>
+                                    <td>50.00</td>
+                                    <td><a href="#">https://report/NG0012</a></td>
+                                </tr>
+                                <!-- Row-5 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Enregisterment</td>
+                                    <td>Performance</td>
+                                    <td>EUBSCO.NG0033</td>
+                                    <td>Prep.Faire</td>
+                                    <td>Running</td>
+                                    <td>29.00</td>
+                                    <td>15.00</td>
+                                    <td><a href="#">https://report/NG0033</a></td>
+                                </tr>
+                                <!-- Row-6 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Validation</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG0054</td>
+                                    <td>Anomalies de</td>
+                                    <td>Stopped</td>
+                                    <td>?</td>
+                                    <td>23.00</td>
+                                    <td><a href="#">https://report/NG0054</a></td>
+                                </tr>
+                                <!-- Row-7 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Reception</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG001</td>
+                                    <td>Encha. COlis</td>
+                                    <td>Running</td>
+                                    <td>55.00</td>
+                                    <td>50.00</td>
+                                    <td><a href="#">https://report/NG0012</a></td>
+                                </tr>
+                                <!-- Row-8 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Enregisterment</td>
+                                    <td>Performance</td>
+                                    <td>EUBSCO.NG0033</td>
+                                    <td>Prep.Faire</td>
+                                    <td>Running</td>
+                                    <td>10.00</td>
+                                    <td>0.00</td>
+                                    <td><a href="#">https://report/NG0033</a></td>
+                                </tr>
+                                <!-- Row-9 -->
+                                <tr  onclick="getRow(this)">
+                                    <td>Validation</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG0054</td>
+                                    <td>Anomalies de</td>
+                                    <td>Stopped</td>
+                                    <td>?</td>
+                                    <td>23.00</td>
+                                    <td><a href="#">https://report/NG0054</a></td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                        <div class="mail-logs">
+                            <h2>
+                                Mail Alerts
+                            </h2>
+                                <span class="mails"><i class="fa-solid fa-chevron-right bullets"></i>&nbsp;&nbsp;&nbsp;&nbspMail sent for <span id="list-View"></span> at <span id="list-time"></span></span>
+                        </div>
+                    </div>
+                    <!-- Inactive List -->
+                    <div id="inactive-list-show">
+                        <table id="Inactive-data-list">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Type</th>
+                                    <th>Code</th>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Act. Count</th>
+                                    <th>Prev. Count</th>
+                                    <th>Detail Report</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Row-1 -->
+                                <tr onclick="getRowInactive(this)">
+                                    <td>Reception</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG0012</td>
+                                    <td>Encha. COlis</td>
+                                    <td>Running</td>
+                                    <td>?</td>
+                                    <td>50.00</td>
+                                    <td><a href="#">https://report/NG0012</a></td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr  onclick="getRowInactive(this)">
+                                    <td>Validation</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG0054</td>
+                                    <td>Anomalies de</td>
+                                    <td>Stopped</td>
+                                    <td>?</td>
+                                    <td>23.00</td>
+                                    <td><a href="#">https://report/NG0054</a></td>
+                                </tr>
+                                <!-- Row-3 -->
+                                <tr  onclick="getRowInactive(this)">
+                                    <td>Reception</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG001</td>
+                                    <td>Encha. COlis</td>
+                                    <td>Running</td>
+                                    <td>?</td>
+                                    <td>50.00</td>
+                                    <td><a href="#">https://report/NG0012</a></td>
+                                </tr>
+                                <!-- Row-4 -->
+                                <tr  onclick="getRowInactive(this)">
+                                    <td>Enregisterment</td>
+                                    <td>Performance</td>
+                                    <td>EUBSCO.NG0033</td>
+                                    <td>Prep.Faire</td>
+                                    <td>Running</td>
+                                    <td>?</td>
+                                    <td>15.00</td>
+                                    <td><a href="#">https://report/NG0033</a></td>
+                                </tr>
+                                <!-- Row-5 -->
+                                <tr  onclick="getRowInactive(this)">
+                                    <td>Validation</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG0054</td>
+                                    <td>Anomalies de</td>
+                                    <td>Stopped</td>
+                                    <td>?</td>
+                                    <td>23.00</td>
+                                    <td><a href="#">https://report/NG0054</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="mail-logs">
+                            <h2>
+                                Mail Alerts
+                            </h2>
+                                <span class="mails"><i class="fa-solid fa-chevron-right bullets"></i>&nbsp;&nbsp;&nbsp;&nbspMail sent for <span id="inactive-list-View"></span> at <span id="inactive-list-time"></span></span>
+                        </div>
+                    </div>
+                    <!-- Active List -->
+                    <div id="active-list-show">
+                        <table id="Active-data-list">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Type</th>
+                                    <th>Code</th>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Act. Count</th>
+                                    <th>Prev. Count</th>
+                                    <th>Detail Report</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Row-1 -->
+                                <tr  onclick="getRowActive(this)">
+                                    <td>Reception</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG0012</td>
+                                    <td>Encha. COlis</td>
+                                    <td>Running</td>
+                                    <td>55.00</td>
+                                    <td>50.00</td>
+                                    <td><a href="#">https://report/NG0012</a></td>
+                                </tr>
+                                <!-- Row-2 -->
+                                <tr  onclick="getRowActive(this)">
+                                    <td>Enregisterment</td>
+                                    <td>Performance</td>
+                                    <td>EUBSCO.NG0033</td>
+                                    <td>Prep.Faire</td>
+                                    <td>Running</td>
+                                    <td>10.00</td>
+                                    <td>0.00</td>
+                                    <td><a href="#">https://report/NG0033</a></td>
+                                </tr>
+                                <!-- Row-3 -->
+                                <tr  onclick="getRowActive(this)">
+                                    <td>Reception</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG001</td>
+                                    <td>Encha. COlis</td>
+                                    <td>Running</td>
+                                    <td>55.00</td>
+                                    <td>50.00</td>
+                                    <td><a href="#">https://report/NG0012</a></td>
+                                </tr>
+                                <!-- Row-5 -->
+                                <tr  onclick="getRowActive(this)">
+                                    <td>Enregisterment</td>
+                                    <td>Performance</td>
+                                    <td>EUBSCO.NG0033</td>
+                                    <td>Prep.Faire</td>
+                                    <td>Running</td>
+                                    <td>29.00</td>
+                                    <td>15.00</td>
+                                    <td><a href="#">https://report/NG0033</a></td>
+                                </tr>
+                                <!-- Row-6 -->
+                                <tr  onclick="getRowActive(this)">
+                                    <td>Reception</td>
+                                    <td>Control</td>
+                                    <td>EUBSCO.NG001</td>
+                                    <td>Encha. COlis</td>
+                                    <td>Running</td>
+                                    <td>55.00</td>
+                                    <td>50.00</td>
+                                    <td><a href="#">https://report/NG0012</a></td>
+                                </tr>
+                                <!-- Row-7 -->
+                                <tr  onclick="getRowActive(this)">
+                                    <td>Enregisterment</td>
+                                    <td>Performance</td>
+                                    <td>EUBSCO.NG0033</td>
+                                    <td>Prep.Faire</td>
+                                    <td>Running</td>
+                                    <td>10.00</td>
+                                    <td>0.00</td>
+                                    <td><a href="#">https://report/NG0033</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="mail-logs">
+                            <h2>
+                                Mail Alerts
+                            </h2>
+                                <span class="mails"><i class="fa-solid fa-chevron-right bullets"></i>&nbsp;&nbsp;&nbsp;&nbspMail sent for <span id="active-list-View"></span> at <span id="active-list-time"></span></span>
+                        </div>
+                    </div>
+                    <div id="grid">
+                        <div id="data-grid">
+                            <div class="grid-data">
+                                <p class="detail-data two"></p>
+                                <div class="top two">
+                                    <p>5'</p>
+                                    <p>Samples Under Preparations</p>
+                                </div>
+                                <div><span id="griddata1">298</span><i class="fa-solid fa-caret-right"></i></div>
+                                <p><span class="view-data"><a href="#">Details</a></span></p>
+                                <p class="time two"></p>
+                            </div>
+                            <div class="grid-data">
+                                <p class="details-data one"></p>
+                                <div class="top one">
+                                    <p>15'</p>
+                                    <p>Samples Under Registration</p>
+                                </div>
+                                <div><span id="griddata2">8</span><i class="fa-solid fa-caret-right"></i></div>
+                                <p><span class="view-data"><a href="#">Details</a></span></p>
+                                <p class="time2 one"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="custom">
+                        <div id="data-custom">
+                            <a href="#"><i class="fa-solid fa-plus action"></i></a>
+                            <a href="#"><i class="fa-solid fa-file action"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="switch">
+                    <div class="views" id="list-view"><span class="text1">List View</Span></div>
+                    <span class="views" id="grid-view"><span class="text1">Grid View</Span></span>
+                    <span class="views" id="custom-view"><span class="text1">Custom View</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js" type="text/javascript"></script>
+</body>
+
+</html>
